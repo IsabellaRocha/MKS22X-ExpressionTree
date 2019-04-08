@@ -56,6 +56,12 @@ public class ExpressionTree {
     }
   }
   private double apply(char op, double a, double b) {
-    return 1;
+    double output = 0;
+    if (op == '+') output = a + b;
+    if (op == '-') output = a - b;
+    if (op == '*') output = a * b;
+    if (op == '/') output = a / b;
+    if (op == '%') output = a % b;
+    return output;
   }
 }
